@@ -1,13 +1,9 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/ui/landingPage/hero-section";
 export default function Home() {
   return (
+     <div>
 
-    <div>
-      
-      <h1>Monal&apos;s Universe now You are entering in different environment</h1>
-      <Button>Click Me</Button>
-      
-    </div>
+      <HeroSection/>
+     </div>
   );
 }
-  
