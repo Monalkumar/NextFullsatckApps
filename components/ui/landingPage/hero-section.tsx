@@ -3,7 +3,29 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ArrowRightIcon } from "lucide-react";
 import { FileKeyIcon } from "lucide-react";
+import StatsCard from "./stats-card";
 export default function HeroSection(){
+  const statsCardsArray=
+    [
+        { 
+            id:1,
+        icon:FileKeyIcon,
+        value :"1000",
+        label:"explore"
+    },
+        
+        { id:2,
+            icon:FileKeyIcon,
+        value :"1100",
+        label:"explore"
+    },
+        
+        {id:3,
+             icon:FileKeyIcon,
+        value :"1500",
+        label:"explore"
+    }
+    ]
     return(
         <section>
 
@@ -22,6 +44,10 @@ export default function HeroSection(){
       </div>
 
     </div>
+    {statsCardsArray.map((item)=>(
+<StatsCard key={item.id} {...item}/>
+    ))}
+    
     </div>
     </section>
     )
